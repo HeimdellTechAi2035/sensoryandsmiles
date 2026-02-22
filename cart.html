@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -129,15 +129,15 @@
       <h3>Order Summary</h3>
       <div class="cart-summary-row">
         <span>Subtotal</span>
-        <span id="summary-subtotal">$0.00</span>
+        <span id="summary-subtotal">£0.00</span>
       </div>
       <div class="cart-summary-row">
         <span>Shipping</span>
-        <span id="summary-shipping">$0.00</span>
+        <span id="summary-shipping">£0.00</span>
       </div>
       <div class="cart-summary-row total">
         <span>Total</span>
-        <span id="summary-total">$0.00</span>
+        <span id="summary-total">£0.00</span>
       </div>
     </div>
 
@@ -243,7 +243,7 @@
           <span>${item.qty}</span>
           <button onclick="changeQtyPage(${i},1)">+</button>
         </div>
-        <div class="cart-page-item-line-total">$${lineTotal}</div>
+        <div class="cart-page-item-line-total">£${lineTotal}</div>
         <button class="cart-page-item-remove" onclick="removeItemPage(${i})" title="Remove">🗑️</button>
       </div>`;
     }).join('');
@@ -252,9 +252,9 @@
     const subtotal = parseFloat(Cart.total());
     const shipping = subtotal >= 50 ? 0 : 5.99;
     const total = (subtotal + shipping).toFixed(2);
-    document.getElementById('summary-subtotal').textContent = '$' + subtotal.toFixed(2);
-    document.getElementById('summary-shipping').innerHTML = shipping === 0 ? '<span class="free-ship">FREE</span>' : '$5.99';
-    document.getElementById('summary-total').textContent = '$' + total;
+    document.getElementById('summary-subtotal').textContent = '£' + subtotal.toFixed(2);
+    document.getElementById('summary-shipping').innerHTML = shipping === 0 ? '<span class="free-ship">FREE</span>' : '£5.99';
+    document.getElementById('summary-total').textContent = '£' + total;
   }
 
   function changeQtyPage(index, delta) {

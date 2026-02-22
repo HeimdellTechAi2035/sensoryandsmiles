@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    SENSORY & SMILES — ADMIN + PRODUCT + REVIEW CAROUSEL ENGINE
    Password-protected editing for products & reviews.
    Password: sensory2026  (SHA-256 hashed, never stored in plain text)
@@ -191,9 +191,9 @@ function openProductEditor(pageId, index, bgColor) {
       <h2 style="margin-bottom:1rem;font-family:'Baloo 2',cursive;color:var(--navy);">Edit Product #${index + 1}</h2>
       <label>Name</label>
       <input type="text" id="ae-name" value="${p.name}" />
-      <label>Price (e.g. $34.99)</label>
+      <label>Price (e.g. £34.99)</label>
       <input type="text" id="ae-price" value="${p.price}" />
-      <label>Old Price (optional, e.g. $45.00)</label>
+      <label>Old Price (optional, e.g. £45.00)</label>
       <input type="text" id="ae-oldprice" value="${p.oldPrice || ''}" />
       <label>Description</label>
       <textarea id="ae-desc" rows="3">${p.desc}</textarea>

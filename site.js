@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    SENSORY & SMILES — SITE-WIDE FEATURES
    Shopping cart, announcements, cookie consent, scroll effects
    ============================================================ */
@@ -114,7 +114,7 @@ const Cart = {
 
     footer.innerHTML = `
       <div class="cart-total">
-        <span>Total:</span><strong>$${this.total()}</strong>
+        <span>Total:</span><strong>£${this.total()}</strong>
       </div>
       <button class="btn btn-primary cart-checkout-btn" style="width:100%;padding:.75rem;font-size:1.05rem;margin-top:.5rem;">Proceed to Checkout</button>
       <button class="btn btn-outline cart-clear-btn" style="width:100%;padding:.55rem;font-size:.88rem;margin-top:.4rem;" onclick="Cart.clear()">Clear Cart</button>`;
@@ -133,7 +133,7 @@ function initAnnouncementBar() {
   const bar = document.createElement('div');
   bar.className = 'announcement-bar';
   bar.innerHTML = `
-    <p>🎉 <strong>Free Shipping</strong> on orders over $50! Use code <strong>SENSORY10</strong> for 10% off your first order</p>
+    <p>🎉 <strong>Free Shipping</strong> on orders over £50! Use code <strong>SENSORY10</strong> for 10% off your first order</p>
     <button class="announcement-close" aria-label="Close">&times;</button>`;
   document.body.prepend(bar);
 
@@ -223,7 +223,7 @@ function initCartButtons() {
       const card = btn.closest('.product-item');
       if (!card) return;
       const name = card.querySelector('h3')?.textContent || 'Product';
-      const price = card.querySelector('.price')?.childNodes[0]?.textContent?.trim() || '$0';
+      const price = card.querySelector('.price')?.childNodes[0]?.textContent?.trim() || '£0';
       const imgEl = card.querySelector('.product-item-img img');
       const image = imgEl ? imgEl.src : '';
       const emojiEl = card.querySelector('.product-item-img span');
