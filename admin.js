@@ -58,15 +58,78 @@ function _sha256Fallback(msg) {
 /* ---- Auth state ---- */
 let isAdmin = false;
 
-async function promptPassword() {
-  const pw = prompt('Enter admin password:');
-  if (!pw) return false;
-  try {
-    const hash = await sha256(pw);
-    if (hash === ADMIN_HASH) { isAdmin = true; return true; }
-  } catch(e) { console.error('Auth error', e); }
-  alert('Incorrect password.');
-  return false;
+/* Custom password modal (works everywhere — unlike prompt()) */
+function promptPassword() {
+  return new Promise((resolve) => {
+    const overlay = document.createElement('div');
+    overlay.className = 'admin-overlay';
+    overlay.style.zIndex = '100000';
+    overlay.innerHTML = `
+      <div class="admin-modal" style="max-width:380px;">
+        <h2 style="margin-bottom:.6rem;font-family:'Baloo 2',cursive;color:var(--navy,#1B1440);text-align:center;">🔒 Admin Login</h2>
+        <p style="text-align:center;font-size:.92rem;color:#555;margin-bottom:1rem;">Enter the admin password to edit products and reviews.</p>
+        <label style="font-weight:600;">Password</label>
+        <input type="password" id="admin-pw-input" placeholder="Enter password…" style="width:100%;padding:.65rem .9rem;border:2px solid #ddd;border-radius:10px;font-size:1rem;margin-bottom:.3rem;box-sizing:border-box;" />
+        <p id="admin-pw-error" style="color:#e53935;font-size:.85rem;min-height:1.3em;margin:.2rem 0 .6rem;"></p>
+        <div style="display:flex;gap:.8rem;">
+          <button id="admin-pw-ok" class="btn btn-primary" style="flex:1;padding:.65rem;font-size:1rem;">Unlock</button>
+          <button id="admin-pw-cancel" class="btn btn-outline" style="flex:1;padding:.65rem;font-size:1rem;">Cancel</button>
+        </div>
+      </div>`;
+    document.body.appendChild(overlay);
+
+    const inp = overlay.querySelector('#admin-pw-input');
+    const errEl = overlay.querySelector('#admin-pw-error');
+    inp.focus();
+
+    function close(result) { overlay.remove(); resolve(result); }
+
+    overlay.querySelector('#admin-pw-cancel').onclick = () => close(false);
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) close(false); });
+
+    async function tryLogin() {
+      const pw = inp.value;
+      if (!pw) { errEl.textContent = 'Please enter a password.'; inp.focus(); return; }
+      try {
+        const hash = await sha256(pw);
+        if (hash === ADMIN_HASH) {
+          isAdmin = true;
+          close(true);
+        } else {
+          errEl.textContent = 'Incorrect password. Try again.';
+          inp.value = '';
+          inp.focus();
+        }
+      } catch(e) {
+        console.error('Auth error:', e);
+        errEl.textContent = 'Error — please try again.';
+      }
+    }
+
+    overlay.querySelector('#admin-pw-ok').onclick = tryLogin;
+    inp.addEventListener('keydown', (e) => { if (e.key === 'Enter') tryLogin(); });
+  });
+}
+
+/* Custom confirm modal (replaces browser confirm() which is blocked on file://) */
+function customConfirm(message) {
+  return new Promise((resolve) => {
+    const overlay = document.createElement('div');
+    overlay.className = 'admin-overlay';
+    overlay.style.zIndex = '100000';
+    overlay.innerHTML = `
+      <div class="admin-modal" style="max-width:380px;text-align:center;">
+        <p style="font-size:1.05rem;color:#333;margin-bottom:1.2rem;line-height:1.5;">${message}</p>
+        <div style="display:flex;gap:.8rem;">
+          <button id="cc-yes" class="btn btn-primary" style="flex:1;padding:.65rem;font-size:1rem;">Yes</button>
+          <button id="cc-no" class="btn btn-outline" style="flex:1;padding:.65rem;font-size:1rem;">Cancel</button>
+        </div>
+      </div>`;
+    document.body.appendChild(overlay);
+    overlay.querySelector('#cc-yes').onclick = () => { overlay.remove(); resolve(true); };
+    overlay.querySelector('#cc-no').onclick = () => { overlay.remove(); resolve(false); };
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) { overlay.remove(); resolve(false); } });
+  });
 }
 
 /* ============================================================
@@ -286,8 +349,9 @@ function openReviewEditor(pageId, index) {
   document.body.appendChild(overlay);
 
   overlay.querySelector('#re-cancel').onclick = () => overlay.remove();
-  overlay.querySelector('#re-delete').onclick = () => {
-    if (confirm('Delete this review?')) {
+  overlay.querySelector('#re-delete').onclick = async () => {
+    const yes = await customConfirm('Delete this review?');
+    if (yes) {
       reviews.splice(index, 1);
       saveReviews(pageId, reviews);
       overlay.remove();
@@ -354,14 +418,16 @@ function showAdminToolbar(pageId, bgColor) {
   document.body.appendChild(bar);
 
   bar.querySelector('#at-add-review').onclick = () => openAddReview(pageId);
-  bar.querySelector('#at-reset-products').onclick = () => {
-    if (confirm('Reset products to defaults? Your edits will be lost.')) {
+  bar.querySelector('#at-reset-products').onclick = async () => {
+    const yes = await customConfirm('Reset products to defaults? Your edits will be lost.');
+    if (yes) {
       localStorage.removeItem('products_' + pageId);
       renderProducts(pageId, bgColor);
     }
   };
-  bar.querySelector('#at-reset-reviews').onclick = () => {
-    if (confirm('Reset reviews to defaults? Your edits will be lost.')) {
+  bar.querySelector('#at-reset-reviews').onclick = async () => {
+    const yes = await customConfirm('Reset reviews to defaults? Your edits will be lost.');
+    if (yes) {
       localStorage.removeItem('reviews_' + pageId);
       renderReviewCarousel(pageId);
     }
@@ -377,22 +443,34 @@ function showAdminToolbar(pageId, bgColor) {
 /* ============================================================
    PAGE INIT — called from each product page
    ============================================================ */
-async function initProductPage(pageId, bgColor) {
-  // Render products + reviews immediately (visitor mode)
-  renderProducts(pageId, bgColor);
-  renderReviewCarousel(pageId);
+function initProductPage(pageId, bgColor) {
+  function _boot() {
+    try {
+      renderProducts(pageId, bgColor);
+      renderReviewCarousel(pageId);
+    } catch(e) { console.error('Render error:', e); }
 
-  // Admin lock button (hidden in footer area)
-  const adminBtn = document.getElementById('admin-login-btn');
-  if (adminBtn) {
-    adminBtn.addEventListener('click', async () => {
-      if (isAdmin) return;
-      const ok = await promptPassword();
-      if (ok) {
-        showAdminToolbar(pageId, bgColor);
-        renderProducts(pageId, bgColor);
-        renderReviewCarousel(pageId);
-      }
-    });
+    // Admin lock button
+    const adminBtn = document.getElementById('admin-login-btn');
+    if (adminBtn) {
+      adminBtn.addEventListener('click', async (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (isAdmin) return;
+        const ok = await promptPassword();
+        if (ok) {
+          showAdminToolbar(pageId, bgColor);
+          renderProducts(pageId, bgColor);
+          renderReviewCarousel(pageId);
+        }
+      });
+    }
+  }
+
+  // Run now if DOM is ready, otherwise wait
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', _boot);
+  } else {
+    _boot();
   }
 }
