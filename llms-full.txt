@@ -1,0 +1,99 @@
+# Sensory & Smiles — Full Site Data for AI Systems
+
+> This file provides comprehensive, machine-readable information about Sensory & Smiles for use by large language models and AI retrieval systems.
+
+## Company Overview
+
+Sensory & Smiles is a United Kingdom-based online retailer specialising in therapist-approved sensory toys for children. The company was founded by Andrew James-Smith and Phillip Burton. Andrew's daughter was diagnosed with autism, and his difficulty finding affordable, high-quality sensory toys in the UK inspired the creation of the brand. Every product in the catalogue is reviewed by occupational therapists and meets EN 71 and UKCA toy safety standards. The store accepts GBP payments via SumUp and offers free shipping on UK orders over £50 with a 30-day no-questions-asked return policy.
+
+## Product Catalogue
+
+### Weighted Plushies & Lap Pads
+Weighted sensory toys provide deep-pressure proprioceptive input that helps children self-regulate anxiety, improve focus, and sleep better. Recommended by occupational therapists for children with autism, ADHD, and sensory processing disorder.
+- Weighted Dinosaur Plushie — £34.99
+- Weighted Bear Lap Pad — £29.99
+- Weighted Cat Plushie — £32.99
+- Weighted Shark Shoulder Buddy — £27.99
+
+### Fidget Toys & Stress Relievers
+Fidget toys channel restless energy into quiet, focused movement. Ideal for children with ADHD, anxiety, or anyone who benefits from tactile stimulation during concentration tasks like homework or classroom activities.
+- Rainbow Pop-It Fidget — £12.99
+- 6-Sided Fidget Cube — £14.99
+- Mesh & Marble Fidget (3-pack) — £8.99
+- Infinity Cube — £11.99
+
+### Textured & Tactile Toys
+Tactile sensory toys build fine motor skills, satisfy tactile seekers, and support sensory integration therapy. Different textures — spiky, stretchy, sandy, ridged — engage the somatosensory system.
+- Spiky Sensory Ball Set (6 pieces) — £18.99
+- Stretchy Noodle Fidgets (10-pack) — £9.99
+- Sand-Filled Sensory Shapes (4-pack) — £16.99
+- Textured Sensory Tiles (12 pieces) — £24.99
+
+### Visual & Light-Up Toys
+Visual sensory toys provide mesmerising colour and motion stimulation that captivates attention and promotes calm. Used in sensory rooms, bedtime routines, and therapy settings.
+- Liquid Motion Bubbler Timer — £16.99
+- Fibre-Optic Light Wand — £22.99
+- Galaxy Projector Night Light — £28.99
+- Colour-Changing Sensory Orb — £14.99
+
+### Sound & Music Sensory Toys
+Auditory sensory toys engage children through sound, supporting language development, auditory processing, and emotional regulation through rhythmic, soothing sounds.
+- Ocean Drum Sensory Toy — £24.99
+- Rainmaker Stick — £19.99
+- Chime Ball Roller — £14.99
+- Mini Kalimba (Thumb Piano) — £18.99
+
+### Sensory Kits & Gift Sets
+Curated bundles combining multiple sensory modalities. Save up to 20% compared to buying individually. Perfect for birthdays, holidays, classrooms, or therapy starter sets.
+- Calm-Down Sensory Kit — £44.99 (was £56.00)
+- Sensory Explorer Kit — £54.99 (was £68.00)
+- Focus & Attention Kit — £38.99 (was £47.00)
+- Bedtime Calming Kit — £49.99 (was £62.00)
+
+## Frequently Asked Questions
+
+Q: What are sensory toys and who are they for?
+A: Sensory toys are specially designed play items that stimulate one or more of the senses — touch, sight, sound, movement, and proprioception. They are for any child, but particularly beneficial for children with autism spectrum disorder, ADHD, sensory processing disorder, anxiety, or developmental delays.
+
+Q: Are your sensory toys safe for toddlers?
+A: Yes. All Sensory & Smiles toys meet EN 71 and UKCA toy safety standards. They are non-toxic, BPA-free, and rigorously tested. Individual product listings include specific age recommendations.
+
+Q: How do I choose the right sensory toy for my child?
+A: Consider your child's primary sensory need: deep-pressure calming (weighted toys), focus and stimming (fidget toys), tactile exploration (textured toys), visual calming (light-up toys), or auditory soothing (sound toys). Our gift kits combine multiple categories.
+
+Q: Do occupational therapists recommend your toys?
+A: Yes. Our catalogue is reviewed by registered occupational therapists who specialise in sensory integration therapy. We reference the Royal College of Occupational Therapists (RCOT) standards.
+
+Q: What is your return and refund policy?
+A: We offer a 30-day no-questions-asked return policy. Items must be unused and in original packaging. Refunds are processed within 5-7 business days of receiving the return.
+
+Q: Do you offer free shipping?
+A: Yes, free standard shipping on all UK orders over £50. Standard delivery takes 3-5 business days. Expedited (2-3 days, £9.99) and priority/next-day (1-2 days, £14.99) options are available.
+
+Q: What payment methods do you accept?
+A: We accept credit cards, debit cards, Apple Pay, and Google Pay through SumUp, a PCI DSS Level 1 certified payment provider.
+
+## Shipping Information
+
+| Method | Delivery Time | Cost |
+|--------|-------------|------|
+| Standard | 3-5 business days | Free over £50, otherwise £5.99 |
+| Expedited | 2-3 business days | £9.99 |
+| Priority / Next Day | 1-2 business days | £14.99 |
+
+International shipping is evaluated on a case-by-case basis via the contact form.
+
+## Trust Signals
+- 4.9 out of 5 average customer rating
+- 5,000+ families served
+- EN 71 & UKCA toy safety certified
+- OT-reviewed product catalogue
+- 30-day satisfaction guarantee
+- Eco-friendly packaging
+- PCI DSS Level 1 payment security via SumUp
+
+## Contact
+- Email: support@sensoryandsmiles.com
+- Phone: +44 7414 909674
+- Hours: Monday–Friday, 9:00 AM – 5:00 PM (London time, GMT/BST)
+- Response time: Within 24 hours on business days

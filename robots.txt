@@ -3,4 +3,8 @@ Allow: /
 
 Sitemap: https://heimdelltechai2035.github.io/sensoryandsmiles/sitemap.xml
 
+# AI / LLM crawlers
+# llms.txt: https://heimdelltechai2035.github.io/sensoryandsmiles/llms.txt
+# llms-full.txt: https://heimdelltechai2035.github.io/sensoryandsmiles/llms-full.txt
+
 # Sensory & Smiles - Kids Sensory Toys

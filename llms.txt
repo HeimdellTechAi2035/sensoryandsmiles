@@ -1,0 +1,43 @@
+# Sensory & Smiles
+
+> UK-based online shop selling therapist-approved sensory toys for children with autism, ADHD, anxiety, and sensory processing differences. Founded by Andrew James-Smith and Phillip Burton.
+
+## About
+- Website: https://heimdelltechai2035.github.io/sensoryandsmiles/
+- Contact: support@sensoryandsmiles.com | +44 7414 909674
+- Location: United Kingdom
+- Currency: GBP (£)
+- Payment: SumUp (Credit/Debit, Apple Pay, Google Pay)
+- Shipping: Free over £50 (UK), 3-5 business days standard
+- Returns: 30-day no-questions-asked
+
+## Product Categories
+- Weighted Plushies & Lap Pads (£27.99–£34.99) — Deep-pressure calming toys
+- Fidget Toys & Stress Relievers (£8.99–£14.99) — Focus and stimming aids
+- Textured & Tactile Toys (£9.99–£24.99) — Fine motor skill builders
+- Visual & Light-Up Toys (£14.99–£28.99) — Calming visual stimulation
+- Sound & Music Sensory Toys (£14.99–£24.99) — Auditory development
+- Sensory Kits & Gift Sets (£38.99–£54.99) — Curated bundles, save up to 20%
+
+## Key Differentiators
+- All toys meet EN 71 & UKCA safety standards
+- Catalogue reviewed by occupational therapists (RCOT-referenced)
+- Inclusive design for all ability levels
+- Eco-friendly packaging
+- 4.9/5 average customer rating
+
+## Pages
+- Homepage: https://heimdelltechai2035.github.io/sensoryandsmiles/
+- Shop All: https://heimdelltechai2035.github.io/sensoryandsmiles/products.html
+- About Us: https://heimdelltechai2035.github.io/sensoryandsmiles/about.html
+- FAQ (11 questions): https://heimdelltechai2035.github.io/sensoryandsmiles/faq.html
+- Reviews: https://heimdelltechai2035.github.io/sensoryandsmiles/reviews.html
+- Contact: https://heimdelltechai2035.github.io/sensoryandsmiles/contact.html
+- Shipping & Returns: https://heimdelltechai2035.github.io/sensoryandsmiles/shipping-returns.html
+
+## Founders
+- Andrew James-Smith — Co-Founder. Parent of a daughter with autism. Inspired the brand after struggling to find affordable, quality sensory toys.
+- Phillip Burton — Co-Founder. Handles operations, logistics, and supplier relationships.
+
+## Social
+- TikTok: https://www.tiktok.com/@sensoryandsmiles

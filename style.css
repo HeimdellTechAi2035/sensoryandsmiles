@@ -731,3 +731,14 @@ footer {
   font-weight: 700; font-size: 1rem; cursor: pointer; transition: background .2s, transform .2s;
 }
 .newsletter-form button:hover { background: #43A047; transform: translateY(-2px); }
+
+/* ============ REDUCED MOTION ============ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .carousel-track { animation: none !important; }
+}

@@ -58,7 +58,7 @@
   <div class="container">
     <div class="breadcrumb"><a href="index.html">Home</a> <span>›</span> FAQ</div>
     <h1>Frequently Asked <span>Questions</span></h1>
-    <p>Everything you need to know about sensory toys for kids &amp; shopping with Sensory &amp; Smiles.</p>
+    <p class="atomic-answer">Find answers to the most common questions about Sensory &amp; Smiles sensory toys for kids, including safety standards (EN&nbsp;71 &amp; UKCA), age suitability, choosing the right toy for autism or ADHD, shipping (free over £50 in the UK), 30-day returns, payment via SumUp, and school or therapy use. We answer 11 popular questions below.</p>
   </div>
 </section>
 
@@ -183,6 +183,16 @@
 </script>
 
 <script src="site.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".atomic-answer", "h1", ".page-hero p"]
+  }
+}
+</script>
 <script>
   document.querySelectorAll('.faq-question').forEach(btn => {
     btn.addEventListener('click', () => {

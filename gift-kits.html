@@ -58,8 +58,8 @@
 <section class="page-hero">
   <div class="container">
     <div class="breadcrumb"><a href="index.html">Home</a> <span>›</span> <a href="products.html">Products</a> <span>›</span> Gift Kits</div>
-    <h1>Sensory Kits &amp; <span>Gift Sets</span> 🎁</h1>
-    <p>Curated bundles that combine the best sensory toys at a discount — perfect for gifting or first-time buyers.</p>
+    <h1>Sensory Kits &amp; <span>Gift Sets</span></h1>
+    <p class="atomic-answer">Curated sensory toy kits from Sensory &amp; Smiles bundle the best calming, focus, and exploration toys together at 15–22% off individual prices. Each kit is designed for a specific need — anxiety calming, ADHD focus, multi-sense discovery, or bedtime routines. Priced from £38.99 to £54.99 with gift-ready packaging, EN&nbsp;71 &amp; UKCA safety certification, and free UK shipping on orders over £50.</p>
   </div>
 </section>
 
@@ -78,6 +78,15 @@
     <div class="products-grid">
       <!-- Rendered by admin.js -->
     </div>
+
+    <noscript>
+      <div class="products-grid">
+        <div class="product-card"><div class="product-body"><h3>Calm-Down Sensory Kit</h3><p>Weighted plushie + fidget cube + liquid motion timer + stretchy noodles + breathing card. Everything needed for calm.</p><p><strong>£44.99</strong> <s>£56.00</s></p></div></div>
+        <div class="product-card"><div class="product-body"><h3>Sensory Explorer Kit</h3><p>12-piece discovery set — tactile balls, fidgets, stretchy toys, visual timer, sound shaker and more.</p><p><strong>£54.99</strong> <s>£68.00</s></p></div></div>
+        <div class="product-card"><div class="product-body"><h3>Focus &amp; Attention Kit</h3><p>Fidget cube + weighted lap pad + mesh fidgets + infinity cube. Designed for kids with ADHD or attention challenges.</p><p><strong>£38.99</strong> <s>£47.00</s></p></div></div>
+        <div class="product-card"><div class="product-body"><h3>Bedtime Calming Kit</h3><p>Lavender-scented weighted moon + galaxy projector + ocean drum + breathing guide.</p><p><strong>£49.99</strong> <s>£62.00</s></p></div></div>
+      </div>
+    </noscript>
   </div>
 </section>
 
@@ -92,6 +101,12 @@
       <li>Perfect for parents, teachers, therapists &amp; gift-givers</li>
     </ul>
     <p>Learn more about sensory processing at <a href="https://www.understood.org/en/articles/sensory-processing-issues-explained" target="_blank" rel="noopener">Understood.org</a>.</p>
+
+    <h3>What’s Inside Each Kit?</h3>
+    <p>Every Sensory &amp; Smiles kit combines items from multiple sensory categories. The <strong>Calm-Down Kit</strong> pairs a <a href="weighted-toys.html">weighted plushie</a> with a <a href="fidget-toys.html">fidget cube</a>, a <a href="visual-toys.html">liquid motion timer</a>, stretchy noodles, and a guided breathing card. The <strong>Sensory Explorer Kit</strong> spans all five senses with 12 pieces covering <a href="tactile-toys.html">tactile balls</a>, fidgets, visual timers, and <a href="sound-toys.html">sound shakers</a>. This multi-sensory approach is what occupational therapists recommend for building a well-rounded sensory diet.</p>
+
+    <h3>Kits for Classrooms &amp; Therapy</h3>
+    <p>Our kits are popular with educators and occupational therapists who need ready-made resources. The <strong>Focus &amp; Attention Kit</strong> is especially effective in classroom settings for children with ADHD, combining a weighted lap pad with fidget tools for sustained seated focus. Need a custom configuration? <a href="contact.html">Contact our team</a> for bespoke bulk kits and educator pricing.</p>
   </div>
 </section>
 
@@ -147,5 +162,23 @@ window.DEFAULT_PRODUCTS_giftkits = [
 <script src="admin.js"></script>
 <script src="site.js"></script>
 <script>initProductPage('giftkits', 'var(--light-blue)');</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".atomic-answer", "h1", ".page-hero p"]
+  }
+}
+</script>
+<script type="application/ld+json">
+[
+  {"@context":"https://schema.org","@type":"Product","name":"Calm-Down Sensory Kit","description":"5-piece calming kit with weighted plushie, fidget cube, liquid motion timer, stretchy noodles and guided breathing card. Save 20% vs individual prices.","brand":{"@type":"Brand","name":"Sensory & Smiles"},"offers":{"@type":"Offer","price":"44.99","priceCurrency":"GBP","availability":"https://schema.org/InStock"},"audience":{"@type":"PeopleAudience","suggestedMinAge":4,"suggestedMaxAge":12}},
+  {"@context":"https://schema.org","@type":"Product","name":"Sensory Explorer Kit","description":"12-piece multi-sensory discovery set covering touch, sight, sound and movement. Tactile balls, fidgets, stretchy toys, visual timer and sound shaker included.","brand":{"@type":"Brand","name":"Sensory & Smiles"},"offers":{"@type":"Offer","price":"54.99","priceCurrency":"GBP","availability":"https://schema.org/InStock"},"audience":{"@type":"PeopleAudience","suggestedMinAge":3,"suggestedMaxAge":12}},
+  {"@context":"https://schema.org","@type":"Product","name":"Focus & Attention Kit","description":"4-piece focus kit for children with ADHD or attention challenges. Includes fidget cube, weighted lap pad, mesh fidgets and infinity cube.","brand":{"@type":"Brand","name":"Sensory & Smiles"},"offers":{"@type":"Offer","price":"38.99","priceCurrency":"GBP","availability":"https://schema.org/InStock"},"audience":{"@type":"PeopleAudience","suggestedMinAge":5,"suggestedMaxAge":14}},
+  {"@context":"https://schema.org","@type":"Product","name":"Bedtime Calming Kit","description":"4-piece bedtime wind-down kit with lavender-scented weighted moon, galaxy projector, ocean drum and guided breathing card.","brand":{"@type":"Brand","name":"Sensory & Smiles"},"offers":{"@type":"Offer","price":"49.99","priceCurrency":"GBP","availability":"https://schema.org/InStock"},"audience":{"@type":"PeopleAudience","suggestedMinAge":3,"suggestedMaxAge":10}}
+]
+</script>
 </body>
 </html>

@@ -52,7 +52,7 @@
 <section class="hero" id="home">
   <div class="container">
     <h1>Sensory Toys for Kids That Spark <span>Joy&nbsp;&amp;&nbsp;Calm</span> 🌈</h1>
-    <p class="sub">Safe, therapist-inspired sensory toys designed for children with autism, ADHD, anxiety — or any child who loves to explore textures, sounds&nbsp;&amp;&nbsp;movement.</p>
+    <p class="sub atomic-answer">Sensory &amp; Smiles is a UK-based online shop selling therapist-approved sensory toys for children with autism, ADHD, anxiety, and sensory processing differences. Our collection of weighted plushies, fidget toys, tactile toys, visual toys, sound toys, and curated kits ranges from £8.99 to £54.99, meets EN&nbsp;71 &amp; UKCA safety standards, and ships free across the UK on orders over £50.</p>
     <div class="hero-btns">
       <a href="products.html" class="btn btn-primary">Browse Collection</a>
       <a href="why-us.html" class="btn btn-outline" style="border-color:var(--white);color:var(--white);">Why Parents Trust Us</a>
@@ -303,63 +303,67 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Store",
-  "name": "Sensory & Smiles",
-  "description": "Sensory & Smiles offers a curated collection of therapist-approved sensory toys for kids — fidgets, weighted plushies, textured toys, visual stimulation toys and more. Safe, inclusive, and designed to help every child thrive.",
-  "url": "https://heimdelltechai2035.github.io/sensoryandsmiles/",
-  "logo": "https://heimdelltechai2035.github.io/sensoryandsmiles/apple-touch-icon.png",
-  "image": "https://heimdelltechai2035.github.io/sensoryandsmiles/apple-touch-icon.png",
-  "telephone": "+44-7414-909674",
-  "email": "support@sensoryandsmiles.com",
-  "priceRange": "£-££",
-  "currenciesAccepted": "GBP",
-  "paymentAccepted": "Credit Card, Debit Card, Apple Pay, Google Pay via SumUp",
-  "areaServed": {
-    "@type": "Country",
-    "name": "United Kingdom"
-  },
-  "founder": [
+  "@graph": [
     {
-      "@type": "Person",
-      "name": "Andrew James-Smith"
+      "@type": "Organization",
+      "@id": "https://heimdelltechai2035.github.io/sensoryandsmiles/#organization",
+      "name": "Sensory & Smiles",
+      "url": "https://heimdelltechai2035.github.io/sensoryandsmiles/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://heimdelltechai2035.github.io/sensoryandsmiles/apple-touch-icon.png"
+      },
+      "description": "UK-based online retailer of therapist-approved sensory toys for children with autism, ADHD, anxiety, and sensory processing differences.",
+      "telephone": "+44-7414-909674",
+      "email": "support@sensoryandsmiles.com",
+      "founder": [
+        {"@type": "Person", "name": "Andrew James-Smith", "jobTitle": "Co-Founder"},
+        {"@type": "Person", "name": "Phillip Burton", "jobTitle": "Co-Founder"}
+      ],
+      "areaServed": {"@type": "Country", "name": "United Kingdom"},
+      "sameAs": ["https://www.tiktok.com/@sensoryandsmiles"]
     },
     {
-      "@type": "Person",
-      "name": "Phillip Burton"
-    }
-  ],
-  "sameAs": [
-    "https://www.tiktok.com/@sensoryandsmiles"
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Sensory Toys for Kids",
-    "itemListElement": [
-      {
+      "@type": "WebSite",
+      "@id": "https://heimdelltechai2035.github.io/sensoryandsmiles/#website",
+      "name": "Sensory & Smiles",
+      "url": "https://heimdelltechai2035.github.io/sensoryandsmiles/",
+      "publisher": {"@id": "https://heimdelltechai2035.github.io/sensoryandsmiles/#organization"}
+    },
+    {
+      "@type": "Store",
+      "@id": "https://heimdelltechai2035.github.io/sensoryandsmiles/#store",
+      "name": "Sensory & Smiles",
+      "url": "https://heimdelltechai2035.github.io/sensoryandsmiles/",
+      "image": "https://heimdelltechai2035.github.io/sensoryandsmiles/apple-touch-icon.png",
+      "priceRange": "£8.99–£54.99",
+      "currenciesAccepted": "GBP",
+      "paymentAccepted": "Credit Card, Debit Card, Apple Pay, Google Pay via SumUp",
+      "parentOrganization": {"@id": "https://heimdelltechai2035.github.io/sensoryandsmiles/#organization"},
+      "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "Weighted Plushies & Lap Pads"
-      },
-      {
-        "@type": "OfferCatalog",
-        "name": "Fidget Toys & Stress Relievers"
-      },
-      {
-        "@type": "OfferCatalog",
-        "name": "Textured & Tactile Toys"
-      },
-      {
-        "@type": "OfferCatalog",
-        "name": "Visual & Light-Up Toys"
-      },
-      {
-        "@type": "OfferCatalog",
-        "name": "Sound & Music Sensory Toys"
-      },
-      {
-        "@type": "OfferCatalog",
-        "name": "Sensory Kits & Gift Sets"
+        "name": "Sensory Toys for Kids",
+        "itemListElement": [
+          {"@type": "OfferCatalog", "name": "Weighted Plushies & Lap Pads"},
+          {"@type": "OfferCatalog", "name": "Fidget Toys & Stress Relievers"},
+          {"@type": "OfferCatalog", "name": "Textured & Tactile Toys"},
+          {"@type": "OfferCatalog", "name": "Visual & Light-Up Toys"},
+          {"@type": "OfferCatalog", "name": "Sound & Music Sensory Toys"},
+          {"@type": "OfferCatalog", "name": "Sensory Kits & Gift Sets"}
+        ]
       }
-    ]
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".atomic-answer", "h1", ".sub"]
   }
 }
 </script>

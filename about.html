@@ -337,7 +337,7 @@
   <div class="container">
     <div class="breadcrumb"><a href="index.html">Home</a> <span>â€º</span> About Us</div>
     <h1>The Real Story Behind <span>Sensory &amp; Smiles</span></h1>
-    <p>We're not a faceless corporation — we're parents who understand the struggles, the costs, and the joy of finding the right toy.</p>
+    <p class="atomic-answer">Sensory &amp; Smiles was founded by Andrew James-Smith and Phillip Burton after Andrew's daughter was diagnosed with autism and he struggled to find affordable, high-quality sensory toys in the UK. Today, every product in the catalogue is reviewed by occupational therapists, meets EN&nbsp;71 &amp; UKCA safety standards, and is designed to help children with autism, ADHD, and sensory processing differences thrive through purposeful play.</p>
   </div>
 </section>
 
@@ -525,5 +525,15 @@
   </div>
 </footer>
 <script src="site.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".atomic-answer", "h1", ".page-hero p"]
+  }
+}
+</script>
 </body>
 </html>
