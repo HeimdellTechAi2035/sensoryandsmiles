@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Sensory &amp; Smiles | Our Story, Our Mission</title>
+  <meta name="description" content="Meet Andrew James-Smith and Phillip Burton, the founders of Sensory & Smiles. Born from a parent's real experience with autism, our mission is to make quality sensory toys affordable for every family." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://heimdelltechai2035.github.io/sensoryandsmiles/about.html" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About Us — Sensory &amp; Smiles" />
+  <meta property="og:description" content="Meet the founders of Sensory & Smiles. Born from a parent's real experience with autism, we make quality sensory toys affordable for every family." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://heimdelltechai2035.github.io/sensoryandsmiles/about.html" />
+  <meta property="og:image" content="https://heimdelltechai2035.github.io/sensoryandsmiles/apple-touch-icon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- JSON-LD: About Page -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Sensory & Smiles",
+    "url": "https://heimdelltechai2035.github.io/sensoryandsmiles/about.html",
+    "description": "Meet the founders behind Sensory & Smiles — Andrew James-Smith and Phillip Burton. Born from lived experience with autism, our mission is to make quality sensory toys affordable for every family.",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Sensory & Smiles",
+      "url": "https://heimdelltechai2035.github.io/sensoryandsmiles/",
+      "logo": "https://heimdelltechai2035.github.io/sensoryandsmiles/apple-touch-icon.png",
+      "sameAs": [
+        "https://www.tiktok.com/@sensoryandsmiles"
+      ],
+      "founder": [
+        {
+          "@type": "Person",
+          "name": "Andrew James-Smith",
+          "jobTitle": "Co-Founder",
+          "description": "Father and advocate for affordable, quality sensory toys for children with autism and sensory processing differences."
+        },
+        {
+          "@type": "Person",
+          "name": "Phillip Burton",
+          "jobTitle": "Co-Founder",
+          "description": "Partner and co-founder dedicated to making purposeful sensory play accessible to every family."
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "support@sensoryandsmiles.com",
+        "url": "https://heimdelltechai2035.github.io/sensoryandsmiles/contact.html"
+      }
+    }
+  }
+  </script>
+
+  <style>
+    /* ── About Page Specific ─────────────────────────────── */
+    .about-story {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+    .about-story p {
+      font-size: 1.08rem;
+      line-height: 1.85;
+      color: #444;
+      margin-bottom: 1.2rem;
+    }
+    .about-story .highlight {
+      background: linear-gradient(120deg, var(--light-green) 0%, var(--light-blue) 100%);
+      padding: 1.5rem 2rem;
+      border-radius: 16px;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--navy);
+      text-align: center;
+      margin: 2.5rem 0;
+      line-height: 1.7;
+    }
+
+    /* Founder Cards */
+    .founders-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .founder-card {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(27,20,64,.08);
+      transition: transform .3s ease, box-shadow .3s ease;
+    }
+    .founder-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(27,20,64,.14);
+    }
+    .founder-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 1.2rem;
+      display: block;
+      border: 4px solid var(--green);
+      background: var(--light-green);
+    }
+    .founder-photo-placeholder {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      margin: 0 auto 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      border: 4px dashed var(--green);
+      background: var(--light-green);
+      color: var(--green);
+    }
+    .founder-card h3 {
+      font-family: 'Baloo 2', cursive;
+      color: var(--navy);
+      font-size: 1.4rem;
+      margin-bottom: .2rem;
+    }
+    .founder-card .role {
+      color: var(--green);
+      font-weight: 700;
+      font-size: .9rem;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin-bottom: .8rem;
+    }
+    .founder-card p {
+      color: #555;
+      font-size: .95rem;
+      line-height: 1.7;
+    }
+    .founder-social {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: .8rem;
+    }
+    .founder-social a {
+      display: inline-flex;
+      align-items: center;
+      gap: .3rem;
+      padding: .4rem .8rem;
+      border-radius: 8px;
+      font-size: .82rem;
+      font-weight: 600;
+      background: var(--light-bg);
+      color: var(--navy);
+      text-decoration: none;
+      transition: all .2s;
+    }
+    .founder-social a:hover {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    /* Video placeholder */
+    .video-placeholder {
+      max-width: 700px;
+      margin: 2rem auto;
+      aspect-ratio: 16/9;
+      border-radius: 20px;
+      background: linear-gradient(135deg, var(--navy) 0%, var(--purple) 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.1rem;
+      gap: .5rem;
+      border: 3px dashed rgba(255,255,255,.3);
+    }
+    .video-placeholder .play-icon {
+      font-size: 3.5rem;
+      opacity: .8;
+    }
+    .video-placeholder p {
+      opacity: .7;
+      font-size: .9rem;
+    }
+
+    /* Values grid */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .value-card {
+      text-align: center;
+      padding: 1.5rem;
+      border-radius: 16px;
+      background: var(--white);
+      box-shadow: 0 2px 12px rgba(0,0,0,.05);
+    }
+    .value-card .v-icon {
+      font-size: 2.5rem;
+      margin-bottom: .6rem;
+    }
+    .value-card h4 {
+      font-family: 'Baloo 2', cursive;
+      color: var(--navy);
+      margin-bottom: .3rem;
+    }
+    .value-card p {
+      font-size: .88rem;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* Contact bar */
+    .about-contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+    .about-contact-bar a {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .75rem 1.5rem;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: .95rem;
+      text-decoration: none;
+      transition: all .25s ease;
+    }
+    .about-contact-bar .ac-email {
+      background: var(--green);
+      color: #fff;
+    }
+    .about-contact-bar .ac-email:hover {
+      background: #3d9140;
+      transform: translateY(-2px);
+    }
+    .about-contact-bar .ac-phone {
+      background: var(--navy);
+      color: #fff;
+    }
+    .about-contact-bar .ac-phone:hover {
+      background: #12092e;
+      transform: translateY(-2px);
+    }
+    .about-contact-bar .ac-tiktok {
+      background: #000;
+      color: #fff;
+    }
+    .about-contact-bar .ac-tiktok:hover {
+      background: #333;
+      transform: translateY(-2px);
+    }
+
+    /* Photo gallery placeholders */
+    .photo-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .photo-gallery .photo-slot {
+      aspect-ratio: 4/3;
+      border-radius: 16px;
+      border: 3px dashed var(--green);
+      background: var(--light-green);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--green);
+      font-size: .85rem;
+      text-align: center;
+      padding: 1rem;
+      gap: .3rem;
+    }
+    .photo-gallery .photo-slot .slot-icon {
+      font-size: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============================= HEADER ============================= -->
+<header>
+  <div class="container nav-inner">
+    <a href="index.html" class="logo-wrap">
+      <img src="WhatsApp Image 2026-02-22 at 04.12.56.jpeg" alt="Sensory &amp; Smiles logo" />
+      <span class="logo-text">Sensory <span>&amp;</span> Smiles</span>
+    </a>
+    <button class="mobile-toggle" onclick="document.querySelector('nav').classList.toggle('open')" aria-label="Toggle menu">☰</button>
+    <nav>
+      <ul>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="cart.html" class="btn btn-primary">Cart 🛒</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ============================= HERO ============================= -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> <span>›</span> About Us</div>
+    <h1>The Real Story Behind <span>Sensory &amp; Smiles</span></h1>
+    <p>We're not a faceless corporation — we're parents who understand the struggles, the costs, and the joy of finding the right toy.</p>
+  </div>
+</section>
+
+<!-- ============================= OUR STORY ============================= -->
+<section class="section">
+  <div class="container about-story">
+    <h2 style="text-align:center;font-size:1.8rem;margin-bottom:1.5rem;">How It All Started</h2>
+
+    <p>Sensory &amp; Smiles was born from a deeply personal place. Andrew's daughter was diagnosed with autism, and like so many parents, he quickly discovered just how important sensory toys are for development, regulation, and everyday comfort.</p>
+
+    <p>But there was a problem — <strong>quality sensory toys cost a fortune</strong>. The specialist shops charged premium prices. The high street didn't carry what was needed. And the cheap alternatives on marketplace sites were poorly made, sometimes even unsafe. Every parent in the autism and SEN community knows this frustration.</p>
+
+    <p>Andrew and his business partner Phillip said <em>"enough is enough."</em> If no one else was going to make quality sensory toys affordable and accessible, they'd do it themselves.</p>
+
+    <div class="highlight">
+      🧩 "Every child deserves access to the tools that help them feel calm, focused, and understood — regardless of their family's budget." <br/><span style="font-weight:400;font-size:.9rem;">— Andrew &amp; Phillip, Co-Founders</span>
+    </div>
+
+    <p>That belief became Sensory &amp; Smiles. Every toy in our collection is hand-picked with one question in mind: <strong>"Would we give this to our own children?"</strong> If the answer isn't an immediate yes, it doesn't make the cut.</p>
+
+    <p>We work directly with manufacturers, cut out the middlemen, and pass the savings on to you. We test every product for safety, consult with occupational therapists on developmental value, and listen constantly to the parents and carers in our community about what they actually need.</p>
+
+    <p>This isn't just a business — it's a mission. We're two dads who got tired of watching families struggle and decided to build something better.</p>
+  </div>
+</section>
+
+<!-- ============================= VIDEO PLACEHOLDER ============================= -->
+<section class="section" style="background:var(--light-bg);">
+  <div class="container" style="text-align:center;">
+    <h2 style="font-size:1.6rem;margin-bottom:.5rem;">Meet the Founders</h2>
+    <p style="color:#666;margin-bottom:1.5rem;">A short video introduction — coming soon!</p>
+
+    <!-- REPLACE: Swap this placeholder with a real YouTube/Vimeo embed or <video> tag -->
+    <div class="video-placeholder">
+      <span class="play-icon">▶️</span>
+      <strong>Founder Introduction Video</strong>
+      <p>Replace this placeholder with your video embed</p>
+      <p style="font-size:.78rem;opacity:.5;">Recommended: 1–2 min video of Andrew &amp; Phillip telling your story</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= FOUNDER BIO CARDS ============================= -->
+<section class="section">
+  <div class="container">
+    <h2 style="text-align:center;font-size:1.8rem;margin-bottom:.5rem;">The People Behind the Brand</h2>
+    <p style="text-align:center;color:#666;max-width:550px;margin:0 auto 2rem;">Real parents, real passion, real commitment to your family.</p>
+
+    <div class="founders-grid">
+
+      <!-- Andrew -->
+      <div class="founder-card">
+        <!-- REPLACE: Drop your photo as "andrew-photo.jpg" in the project folder, then swap the placeholder below -->
+        <div class="founder-photo-placeholder" aria-label="Photo placeholder for Andrew James-Smith">👤</div>
+        <!-- <img src="andrew-photo.jpg" alt="Andrew James-Smith, Co-Founder of Sensory & Smiles" class="founder-photo" /> -->
+        <h3>Andrew James-Smith</h3>
+        <div class="role">Co-Founder</div>
+        <p>Father to a wonderful daughter with autism. Andrew started Sensory &amp; Smiles after experiencing first-hand how difficult (and expensive) it is to find quality sensory toys. His mission: make purposeful play accessible to every family, not just those who can afford specialist prices.</p>
+        <div class="founder-social">
+          <a href="https://www.tiktok.com/@sensoryandsmiles" target="_blank" rel="noopener">🎵 TikTok</a>
+        </div>
+      </div>
+
+      <!-- Phillip -->
+      <div class="founder-card">
+        <!-- REPLACE: Drop your photo as "phillip-photo.jpg" in the project folder, then swap the placeholder below -->
+        <div class="founder-photo-placeholder" aria-label="Photo placeholder for Phillip Burton">👤</div>
+        <!-- <img src="phillip-photo.jpg" alt="Phillip Burton, Co-Founder of Sensory & Smiles" class="founder-photo" /> -->
+        <h3>Phillip Burton</h3>
+        <div class="role">Co-Founder</div>
+        <p>Phillip shares Andrew's passion for making a real difference in children's lives. Together they handle everything — sourcing, quality testing, customer care, and building a community of families who support each other. Phillip believes every child deserves to feel understood through play.</p>
+        <div class="founder-social">
+          <a href="https://www.tiktok.com/@sensoryandsmiles" target="_blank" rel="noopener">🎵 TikTok</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================= PHOTO GALLERY PLACEHOLDERS ============================= -->
+<section class="section" style="background:var(--light-bg);">
+  <div class="container">
+    <h2 style="text-align:center;font-size:1.6rem;margin-bottom:.5rem;">Behind the Scenes 📸</h2>
+    <p style="text-align:center;color:#666;margin-bottom:1.5rem;">Add your real photos here — the more authentic, the better for trust &amp; SEO.</p>
+
+    <div class="photo-gallery">
+      <!-- REPLACE: Swap these placeholders with real images. Name files: about-photo-1.jpg, about-photo-2.jpg, etc. -->
+      <div class="photo-slot">
+        <span class="slot-icon">📷</span>
+        <strong>about-photo-1.jpg</strong>
+        <span>You with products / packing orders</span>
+      </div>
+      <div class="photo-slot">
+        <span class="slot-icon">📷</span>
+        <strong>about-photo-2.jpg</strong>
+        <span>Family / kids enjoying toys</span>
+      </div>
+      <div class="photo-slot">
+        <span class="slot-icon">📷</span>
+        <strong>about-photo-3.jpg</strong>
+        <span>Behind-the-scenes / your workspace</span>
+      </div>
+      <div class="photo-slot">
+        <span class="slot-icon">📷</span>
+        <strong>about-photo-4.jpg</strong>
+        <span>Community event / meet-up</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= OUR VALUES ============================= -->
+<section class="section">
+  <div class="container">
+    <h2 style="text-align:center;font-size:1.8rem;margin-bottom:1.5rem;">What We Stand For</h2>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="v-icon">💙</div>
+        <h4>Affordability</h4>
+        <p>Quality sensory toys shouldn't break the bank. We keep prices fair so every family has access.</p>
+      </div>
+      <div class="value-card">
+        <div class="v-icon">🛡️</div>
+        <h4>Safety First</h4>
+        <p>Every single product is vetted for safety — non-toxic, BPA-free, and age-appropriate. No compromises.</p>
+      </div>
+      <div class="value-card">
+        <div class="v-icon">♿</div>
+        <h4>Inclusion</h4>
+        <p>We serve all children — neurotypical, autistic, ADHD, sensory processing differences, and beyond.</p>
+      </div>
+      <div class="value-card">
+        <div class="v-icon">👨‍👩‍👧‍👦</div>
+        <h4>Community</h4>
+        <p>We're parents too. We listen, we learn, and we build this together with the families we serve.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= CONTACT BAR ============================= -->
+<section class="section" style="background:var(--navy);color:#fff;text-align:center;">
+  <div class="container">
+    <h2 style="color:var(--yellow);font-size:1.6rem;margin-bottom:.5rem;">Get in Touch With Us</h2>
+    <p style="color:rgba(255,255,255,.8);max-width:500px;margin:0 auto 1.5rem;">Questions, feedback, or just want to say hello? We'd love to hear from you.</p>
+
+    <div class="about-contact-bar">
+      <a href="mailto:support@sensoryandsmiles.com" class="ac-email">✉️ support@sensoryandsmiles.com</a>
+      <a href="contact.html" class="ac-phone">💬 Contact Form</a>
+      <a href="https://www.tiktok.com/@sensoryandsmiles" target="_blank" rel="noopener" class="ac-tiktok">🎵 Follow on TikTok</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= CTA ============================= -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to Find the Perfect Sensory Toy?</h2>
+    <p>Browse our affordable, therapist-approved collection and give your child the gift of purposeful play.</p>
+    <a href="products.html" class="btn btn-primary" style="font-size:1.1rem;padding:.9rem 2.2rem;">Shop the Collection</a>
+  </div>
+</section>
+
+<section class="newsletter-section">
+  <div class="container">
+    <h3>Join the Sensory &amp; Smiles Family 💌</h3>
+    <p>Get exclusive deals, new product alerts &amp; sensory play tips straight to your inbox.</p>
+    <form class="newsletter-form" onsubmit="event.preventDefault();this.querySelector('button').textContent='Subscribed ✓';this.querySelector('input').value='';">
+      <input type="email" placeholder="Enter your email…" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col"><h4>Sensory &amp; Smiles</h4><p style="font-size:.9rem;">Helping kids thrive through purposeful sensory play.</p></div>
+      <div class="footer-col"><h4>Shop</h4><ul><li><a href="weighted-toys.html">Weighted Toys</a></li><li><a href="fidget-toys.html">Fidget Toys</a></li><li><a href="tactile-toys.html">Tactile Toys</a></li><li><a href="visual-toys.html">Visual Toys</a></li><li><a href="sound-toys.html">Sound Toys</a></li><li><a href="gift-kits.html">Gift Kits</a></li></ul></div>
+      <div class="footer-col"><h4>Info</h4><ul><li><a href="about.html">About Us</a></li><li><a href="why-us.html">Why Choose Us</a></li><li><a href="faq.html">FAQ</a></li><li><a href="shipping-returns.html">Shipping &amp; Returns</a></li><li><a href="privacy-policy.html">Privacy Policy</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+      <div class="footer-col"><h4>Connect</h4><ul><li><a href="https://www.tiktok.com/@sensoryandsmiles" target="_blank" rel="noopener">TikTok</a></li><li><a href="mailto:support@sensoryandsmiles.com">Email Us</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Sensory &amp; Smiles. All rights reserved.</p></div>
+  </div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>
