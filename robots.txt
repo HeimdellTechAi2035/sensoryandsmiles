@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sensoryandsmiles.com/sitemap.xml
+Sitemap: https://heimdelltechai2035.github.io/sensoryandsmiles/sitemap.xml
 
 # Sensory & Smiles - Kids Sensory Toys

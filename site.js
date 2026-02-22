@@ -188,7 +188,7 @@ function initBackToTop() {
 function initChatButton() {
   const btn = document.createElement('a');
   btn.className = 'chat-float';
-  btn.href = 'https://wa.me/1234567890?text=Hi!%20I%20have%20a%20question%20about%20Sensory%20%26%20Smiles%20toys';
+  btn.href = 'https://wa.me/447414909674?text=Hi!%20I%20have%20a%20question%20about%20Sensory%20%26%20Smiles%20toys';
   btn.target = '_blank';
   btn.rel = 'noopener';
   btn.setAttribute('aria-label', 'Chat with us on WhatsApp');
