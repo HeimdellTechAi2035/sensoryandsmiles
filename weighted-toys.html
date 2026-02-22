@@ -92,15 +92,18 @@
   </div>
 </section>
 
-<footer>
+<section class="newsletter-section">
   <div class="container">
-    <div class="footer-grid">
-      <div class="footer-col">
-        <h4>Sensory &amp; Smiles</h4>
-        <p style="font-size:.9rem;">Helping kids thrive through purposeful sensory play.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Shop</h4>
+    <h3>Join the Sensory &amp; Smiles Family 💌</h3>
+    <p>Get exclusive deals, new product alerts &amp; sensory play tips straight to your inbox.</p>
+    <form class="newsletter-form" onsubmit="event.preventDefault();this.querySelector('button').textContent='Subscribed ✓';this.querySelector('input').value='';">
+      <input type="email" placeholder="Enter your email…" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<footer>
         <ul>
           <li><a href="weighted-toys.html">Weighted Toys</a></li>
           <li><a href="fidget-toys.html">Fidget Toys</a></li>
@@ -146,6 +149,7 @@ window.DEFAULT_PRODUCTS_weighted = [
 ];
 </script>
 <script src="admin.js"></script>
+<script src="site.js"></script>
 <script>initProductPage('weighted', 'var(--light-blue)');</script>
 </body>
 </html>

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sensoryandsmiles.com/sitemap.xml
+
+# Sensory & Smiles - Kids Sensory Toys

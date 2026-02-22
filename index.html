@@ -285,6 +285,17 @@
   </div>
 </section>
 
+<section class="newsletter-section" style="background:var(--navy);color:#fff;padding:3rem 0;text-align:center;">
+  <div class="container">
+    <h2 style="color:var(--yellow);">Stay in the Loop!</h2>
+    <p style="max-width:520px;margin:.5rem auto 1.2rem;">Get early access to new products, sensory tips &amp; exclusive discounts.</p>
+    <form class="newsletter-form" onsubmit="event.preventDefault();this.querySelector('button').textContent='Subscribed ✓';this.querySelector('input').disabled=true;" style="display:flex;gap:.5rem;max-width:420px;margin:auto;flex-wrap:wrap;justify-content:center;">
+      <input type="email" placeholder="Your email address" required style="flex:1;min-width:200px;padding:.65rem 1rem;border:none;border-radius:8px;font-size:1rem;">
+      <button type="submit" class="btn btn-primary" style="white-space:nowrap;">Subscribe</button>
+    </form>
+  </div>
+</section>
+
 <!-- ============================= FOOTER ============================= -->
 <footer>
   <div class="container">
@@ -457,6 +468,7 @@
 }
 </script>
 
+<script src="site.js"></script>
 <!-- ============================= INTERACTIVE JS ============================= -->
 <script>
   // FAQ Accordion
