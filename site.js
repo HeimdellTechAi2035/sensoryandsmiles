@@ -120,7 +120,7 @@ const Cart = {
       <button class="btn btn-outline cart-clear-btn" style="width:100%;padding:.55rem;font-size:.88rem;margin-top:.4rem;" onclick="Cart.clear()">Clear Cart</button>`;
 
     footer.querySelector('.cart-checkout-btn').addEventListener('click', () => {
-      alert('Checkout coming soon! For now, contact us to place your order.');
+      window.location.href = 'cart.html';
     });
   }
 };
